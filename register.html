@@ -26,9 +26,17 @@
         <div><input type="text" placeholder="Username" required  class="redText" minlength="8" maxlength="14"></input></div><br>
         <div><input type="password" placeholder="Password" required  class="redText" minlength="8" maxlength="14"></input></div><br>
         <div><input type="password" placeholder="Confirm password" required  class="redText" minlength="8" maxlength="14"></input></div><br>
-        <button id="buttonRegister" style="background-color: white;">Register</button>
-        <button id="buttonRegister" style="background-color: white;">Cancel</button>
+        <a href="index.html"><button id="buttonRegister" style="background-color: white;">Register</button></a>
+        <a href="index.html"><button id="buttonCancel" style="background-color: white;">Cancel</button></a>
     </div>
     
 </body>
+<script>
+    console.log("Hello World", 1 + 1);
+
+    let buttonRegister = document.querySelector("#buttonRegister")
+    buttonRegister.onclick = function () {
+        alert("Registered");
+    }
+</script> 
 </html>

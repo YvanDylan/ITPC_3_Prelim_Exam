@@ -8,18 +8,26 @@
         #divContainer {
            text-align: center;
        }
+       .redText {
+            color: black;
+            background-color: white;
+        }
+        .redText:hover {
+            color: black;
+            background-color: #bebebe;
+        }
     </style>
 </head>
 <body style="background-color:#39569c;">
     <div id="divContainer">
         <h1 style="color: white;">Register</h1>
-        <div><input type="text" placeholder="First name" required ></input></div><br>
-        <div><input type="text" placeholder="Last name" required ></input></div><br>
-        <div><input type="text" placeholder="Username" required  minlength="8" maxlength="14"></input></div><br>
-        <div><input type="password" placeholder="Password" required  minlength="8" maxlength="14"></input></div><br>
-        <div><input type="password" placeholder="Confirm password" required minlength="8" maxlength="14"></input></div><br>
-        <button id="buttonRegister">Register</button>
-        <button id="buttonRegister">Cancel</button>
+        <div><input type="text" placeholder="First name" required class="redText"></input></div><br>
+        <div><input type="text" placeholder="Last name" required class="redText"></input></div><br>
+        <div><input type="text" placeholder="Username" required  class="redText" minlength="8" maxlength="14"></input></div><br>
+        <div><input type="password" placeholder="Password" required  class="redText" minlength="8" maxlength="14"></input></div><br>
+        <div><input type="password" placeholder="Confirm password" required  class="redText" minlength="8" maxlength="14"></input></div><br>
+        <button id="buttonRegister" style="background-color: white;">Register</button>
+        <button id="buttonRegister" style="background-color: white;">Cancel</button>
     </div>
     
 </body>

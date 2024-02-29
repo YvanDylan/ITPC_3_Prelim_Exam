@@ -12,6 +12,10 @@
             color: black;
             background-color: white;
         }
+        .redText:hover {
+            color: black;
+            background-color: #bebebe;
+        }
     </style>
 </head>
 <body>
@@ -21,10 +25,19 @@
             <div><input type="text" placeholder="Email" required class="redText"></input></div><br>
             <div><input type="password" placeholder="Password" required class="redText"></input></div><br>
             <button id="buttonLogin" style="background-color:white;">Sign In</button>
-            <button id="buttonRegister" style="background-color:white;">Register</button>
+            <a href="register.html"><button id="buttonRegister" style="background-color:white;">Register</button></a>
         </div>
         
     </body>
+    <script>
+        alert("Pogi 150");
+        console.log("Hello World", 1 + 1);
+    
+        let buttonLogin = document.querySelector("#buttonLogin")
+        buttonLogin.onclick = function () {
+            alert("Login Succesful.");
+        }
+    </script>    
     
 </body>
 </html>

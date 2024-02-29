@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
+    <style>
+        #divContainer {
+           text-align: center;
+       }
+    </style>
 </head>
-<body>
+<body style="background-color:#39569c;">
+    <div id="divContainer">
+        <h1 style="color: white;">Register</h1>
+        <div><input type="text" placeholder="First name" required ></input></div><br>
+        <div><input type="text" placeholder="Last name" required ></input></div><br>
+        <div><input type="text" placeholder="Username" required  minlength="8" maxlength="14"></input></div><br>
+        <div><input type="password" placeholder="Password" required  minlength="8" maxlength="14"></input></div><br>
+        <div><input type="password" placeholder="Confirm password" required minlength="8" maxlength="14"></input></div><br>
+        <button id="buttonRegister">Register</button>
+        <button id="buttonRegister">Cancel</button>
+    </div>
     
 </body>
 </html>
